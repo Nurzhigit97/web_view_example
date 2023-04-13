@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import 'package:web_view_example/ui/home_page/home_page.dart';
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home:  Scaffold(
+        body: HomePage(),
+      ),
+    );
+  }
+}
